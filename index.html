@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <img src="background.gif" alt="bckgound" class="bg" />
-    
+    <img src="background.gif" alt="backgound" class="bg" height="100%" width="100%" />
         <head>
-            <title>AceOSWare</title>
-         
+           <style type="text/css">
+html {
+        overflow: auto;
+}
+</style>
+      <script language="JavaScript">
+
+var space = " ";
+var speed = "500";
+var pos = 0;
+var msg = "AceOSWare";
+function Scroll()
+{
+document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", speed);
+}
+Scroll();
+
+</script>
+
+            
+
         </head>
         <body>
-            <embed src="background.mp3"  type="audio/mpeg" autostart="true" width="0" height="0">
+            <embed src="background.mp3" loop="true" type="audio/mpeg" autostart="true" width="0" height="0">
         </body>
-   
-    
 </html>
+

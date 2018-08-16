@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <img src="background.gif" alt="backgound" class="bg" height="100%" width="100%" />
         <head>
-           <style type="text/css">
-html {
-        overflow: auto;
-}
-</style>
-      <script language="JavaScript">
+        
 
-var space = " ";
-var speed = "500";
-var pos = 0;
-var msg = "AceOSWare";
-function Scroll()
-{
-document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
-pos++;
-if (pos > msg.length) pos = 0;
-window.setTimeout("Scroll()", speed);
-}
-Scroll();
+        <div id="smefpw" color="red" ><font color="#95b806">[annihilated]</font> <font  color="005DFF" > welcome to AceOSWare </font> <br><font color="#95b806">[annihilated]</font> <font color="005DFF">last updated 15/08/2018!</font>
+        <br><font color="#95b806">[annihilated]</font> <font color=#005DFF> Date/Time:  <span id="datetime"></span></font> 
 
-</script>
 
+        <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+
+        <div id="mid">
+        <p>smef.pw</p>
+            <a onclick="twitter()" target="_blank" href="https://twitter.com/Delver_DTK">twitter</a> -
+            <a onclick="discord()" target="_blank" href="https://discord.gg/fsTtNRf">discord</a> -
+            <a onclick="youtube()" target="_blank" href="https://www.youtube.com/channel/UCjCoWrvbPC_vLFqSnJiA_jg">youtube</a></div>
+        
+    	<style>
+            body {
+            background-image: url("background.gif");
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size:100% 100vh;
+            margin: 0;
+            position: relative;
+         
+              ;
+   
+               }        
+
+            </style> 
             
+           
+           
+           </head>
+    
+    
+        
+             <body>
+            <script language="JavaScript">
+    
+            var space = " ";
+            var speed = "500";
+            var pos = 0;
+            var msg = "AceOSWare";
+            function Scroll()
+            {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+            }
+            Scroll();
+    
+            </script>
+            <embed src="background.mp3" loop="true" type="audio/mpeg"  type="audio/mpeg" autostart="true" width="0" height="0"> <audio preload="auto">  
+          
+    </body>
 
-        </head>
-        <body>
-            <embed src="background.mp3" loop="true" type="audio/mpeg" autostart="true" width="0" height="0">
-        </body>
-</html>
+
+
+  
+  
+  </html>
 

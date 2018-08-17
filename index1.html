@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <img src="background1.gif" alt="bckgound" class="bg" />
-    
         <head>
-            <title>AceOSWare</title>
-         <a href="https://smef.cc/junkcode//"> JunkCode </a>
-        <a href="https://aceosware.github.io/"> Home </a>
-        </head>
-        <body>
-            <embed src="background.mp3" loop="true" type="audio/mpeg" autostart="true" width="0" height="0">
+        
 
-        </body>
+        <div id="smefpw" color="red" ><font color="#95b806">[annihilated]</font> <font  color="005DFF" > welcome to AceOSWare </font> <br><font color="#95b806">[annihilated]</font> <font color="005DFF">last updated 15/08/2018!</font>
+        <br><font color="#95b806">[annihilated]</font> <font color=#005DFF> Date/Time:  <span id="datetime"></span></font> 
+
+
+        <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+
+        
+            
+        
+    	<style>
+            body {
+            background-image: url("background.gif");
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size:100% 100vh;
+            margin: 0;
+            position: relative;
+         
+              ;
    
+               }        
+
+            </style> 
+            
+           <br> <iframe width="560" height="315" src="https://www.youtube.com/embed/N11fazSz6TY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           
+           
+          
+          </head>
     
-</html>
+    
+        
+             <body>
+            <script language="JavaScript">
+    
+            var space = " ";
+            var speed = "500";
+            var pos = 0;
+            var msg = "AceOSWare";
+            function Scroll()
+            {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+            }
+            Scroll();
+    
+            </script>
+             
+          
+    </body>
+
+
+
+  
+  
+  </html>
 

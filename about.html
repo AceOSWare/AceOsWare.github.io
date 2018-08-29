@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="icon.png" type="image/png">
+    <title> AceOSWare </title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    
+           <script language="JavaScript">
+ 
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+   
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+     
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+     
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+    <script language="JavaScript">
+    
+            var space = " ";
+            var speed = "500";
+            var pos = 0;
+            var msg = "AceOSWare";
+            function Scroll()
+            {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+            }
+            Scroll();
+    
+            </script>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">AceOSWare</span> About AceOSWare</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Ware.html">Ware</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Me</h1>
+          <p>
+           Im a CS:GO player know as ACEOS, having a great time in the game. However I despise closet cheaters and only aprove on the hvh community. Since on a hvh mostly happens on community servers rather than match making ruining the game for legit players.
+          </p>
+         
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>What I Do</h3>
+            <p>I promote cheats for the hvh community and add out detected or risk status for the cheats incase a player does run the game with vac enabled and grants their account to be untrusted. However it's your risk on downloading and buying the cheats yourself. I am not the developer of any of these cheats unless I claim I do so myself. I list out special cheats out there but however, if anyone decides to legit hack with these cheats then i shall hope the closet cheats get a nice little VAC/Game ban :)  </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>AceOSWare, Copyright &copy; 2018</p>
+    </footer>
+  </body>
+</html>

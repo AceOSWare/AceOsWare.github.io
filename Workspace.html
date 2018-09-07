@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  
+  
+
+  
+        <head>
+          
+           <link rel="icon" href="icon.png" type="image/png">
+ 
+
+    
+
+          
+        <link rel="icon" href="icon.png" type="image/png">
+
+        <div id="smefpw" color="red" ><font face="verdana" color="#6fbc21">[Ware]</font> <font  color="005DFF"  > welcome to AceOSWare </font> <br><font color="#6fbc21">[Ware]</font> <font color="005DFF">last updated 05/09/2018!</font>
+        <br><font color="#6fbc21">[Ware]</font> <font color=#005DFF> Date/Time:  <span id="datetime"></span></font> 
+        
+       
+       
+        
+        <script type="text/javascript">
+
+       
+  
+        
+
+
+        </script>
+        
+        
+        <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+
+        <div align="center"> 
+        <p style="font-size:200px"> </p>  <p style="font-size:70px">  Projects  </p> 
+        
+          <h3 style="color:#c5d1e5;"> <div class="lds-heart"><div></div></div> <a  onclick= "Home()" style="font-size:20px" href="index.html">Home</a> <font color="#005DFF"> - No projects yet, come back later! </font> 
+           <div class="lds-heart"><div></div></div>  </h3> </div> 
+        
+         <link rel="stylesheet" type="text/css" href="Style.css">
+    
+         
+    
+    
+    	<style>
+            body {
+            background-image: url("background4.gif");
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size:100% 100vh;
+            margin: 0;
+            position: relative;
+         
+              ;
+   
+               }        
+
+            </style> 
+            
+         
+        
+          </head> 
+          
+      
+            <script language="JavaScript">
+    
+            var space = " ";
+            var speed = "500";
+            var pos = 0;
+            var msg = "AceOSWare";
+            function Scroll()
+            {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+            }
+            Scroll();
+    
+            </script>
+            <embed src="background2.mp3" loop="true" type="audio/mpeg"  type="audio/mpeg" autostart="true" width="0" height="0"> <audio preload="auto">  
+          
+   
+       </body>
+
+
+
+  
+  
+  </html>
+

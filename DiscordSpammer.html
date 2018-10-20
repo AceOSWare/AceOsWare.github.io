@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="icon.png" type="image/png">
+    <title> AceOSWare </title>
+    <link rel="stylesheet" href="./css/style1.css">
+  </head>
+  <body>
+    
+           <script language="JavaScript">
+ 
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+   
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+     
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+     
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+    <script language="JavaScript">
+    
+            var space = " ";
+            var speed = "500";
+            var pos = 0;
+            var msg = "AceOSWare";
+            function Scroll()
+            {
+            document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("Scroll()", speed);
+            }
+            Scroll();
+    
+            </script>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">CreativeMoonzhackers</span> Discord Spammer</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="CreativeMoonzHackers.html">Home</a></li>
+            <li class="current"><a href="Disocrdspammer.html">DiscordSpammer</a></li>
+            <li><a target="_blank" href="http://listmoz.com/view/9fMFCbjP1pwJdjlcp">Attacked/Listed</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Discord Spammer</h1>
+          <p>
+           Im a CS:GO player know as ACEOS, having a great time in the game. However I despise closet cheaters and only aprove on the hvh community. Since on a hvh mostly happens on community servers rather than match making ruining the game for legit players. Well why did I start this website? Well Im a student in computer science that is currently learning HTML step by step. If you would want to know more about it then heres the  <a onclick="Classroom()" target="_blank" href="https://mrthoe.github.io/intro.html">Classroom Link.</a>
+          </p>
+         
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>What I Do</h3>
+            <p>I promote cheats for the hvh community and add out detected or risk status for the cheats incase a player does run the game with vac enabled and grants their account to be untrusted. However it's your risk on downloading and buying the cheats yourself. I am not the developer of any of these cheats unless I claim I do so myself. I list out special cheats out there but however, if anyone decides to legit hack with these cheats then i shall hope the closet cheats get a nice little VAC/Game ban :)  </p>
+          </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="S83NJTN83R8A2">
+<table>
+<tr><td><input type="hidden" name="on0" value="Bot Quantity">Bot Quantity</td></tr><tr><td><select name="os0">
+	<option value="1 Bot">1 Bot $1.00 USD</option>
+	<option value="2 Bots">2 Bots $2.00 USD</option>
+	<option value="4 Bots">4 Bots $3.00 USD</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="NEVER expiring discord invite">NEVER expiring discord invite</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>AceOSWare, Copyright &copy; 2018</p>
+    </footer>
+  </body>
+</html>

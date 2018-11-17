@@ -195,4 +195,7 @@ text-shadow:
  			}
  
  
- 		
+ 		.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}

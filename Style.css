@@ -1,4 +1,4 @@
-        @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+    
     #container {
 	top: 50%;
 	left: 50%;
@@ -192,24 +192,4 @@ text-shadow:
     background: rgba(7, 9, 21, 0.5);
     top: 50%;
     left: 50%;
-}
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-user agent stylesheet
-video {
-    object-fit: contain;
-}
-0% {
-    opacity: 0;
-}
-100% {
-    opacity: 1;
-}
- 
- 
- 		.inactiveLink {
-   pointer-events: none;
-   cursor: default;
 }

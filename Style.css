@@ -176,23 +176,37 @@ text-shadow:
     width: 50%;
 }
 	
- 			.background-wrap {
-				position: fixed;
- 				z-index: -1000;
- 				width: 100%;
- 				height: 100%;
- 				overflow: hidden;
- 				top: 0;
- 				left: 0;
- 			}
- 			
- 			#video-bg-elem {
- 				position: absolute;
- 				top: 0;
- 				left: 0;
- 				min-height: 100%;
- 				min-width: 100%;
- 			}
+ #vid {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    overflow: hidden;
+    filter: blur(2px) brightness(62.5%);
+    background: #070915;
+    background: rgba(7, 9, 21, 0.5);
+    top: 50%;
+    left: 50%;
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+user agent stylesheet
+video {
+    object-fit: contain;
+}
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
  
  
  		.inactiveLink {

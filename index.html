@@ -5,7 +5,28 @@
 
   
 <head>
-          
+          <title> AceOSWare.xyz </title>
+	<script type="text/javascript">
+(function titleScroller(text) {
+    document.title = text;
+    setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+    }, 500);
+}(" AceOSWare.xyz ")); 
+var titleText = document.title;
+
+function titleMarquee() {
+
+ titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+ document.title = titleText;
+ setTimeout("titleMarquee()", 450);
+ }
+
+</script>
+
+
+
+
            <link rel="icon" href="icon.png" type="image/png">
             <meta name="description" content="A top tier gamer, don't ask how.">
                       <meta name="keywords" content="AceOSWare.xyz, Yes, mEE!">
@@ -34,10 +55,7 @@
         var dt = new Date();
         document.getElementById("datetime").innerHTML = dt.toLocaleString();
          </script>
-    <video class="fadeIn" autoplay="" disablepictureinpicture="" disableremoteplayback="" id="vid" playsinline="">
-  <source src="Video/Sadzilla.mp4" type="video/mp4">
-  </video>
-
+   
 
 				
         <div align="center">
@@ -74,5 +92,24 @@
           </head> 
           
           
-           <body>
+           <bodyonload="titleMarquee()">
+			   
+			   <script type="text/javascript">
 
+var titleText = document.title;
+
+function titleMarquee() {
+
+ titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+ document.title = titleText;
+ setTimeout("AceOSWare.xyz", 450);
+ }
+
+</script>
+			   
+ <video class="fadeIn" autoplay="" disablepictureinpicture="" disableremoteplayback="" id="vid" playsinline="">
+  <source src="Video/Sadzilla.mp4" type="video/mp4">
+  </video>
+
+			   
+			   </body>

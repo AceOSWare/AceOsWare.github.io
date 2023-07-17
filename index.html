@@ -1,146 +1,78 @@
 <!DOCTYPE html>
 <html>
-  
-  
-
-  
 <head>
-          <title> AceOSWare </title>
-	<script type="text/javascript">
-(function titleScroller(text) {
-    document.title = text;
-    setTimeout(function () {
+  <title>AceOSWare</title>
+  <script type="text/javascript">
+    (function titleScroller(text) {
+      document.title = text;
+      setTimeout(function () {
         titleScroller(text.substr(1) + text.substr(0, 1));
-    }, 500);
-}(" AceOSWare ")); 
-var titleText = document.title;
-
-function titleMarquee() {
-
- titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
- document.title = titleText;
- setTimeout("titleMarquee()", 450);
- }
-
-</script>
-
-
-
-
-           <link rel="icon" href="icon.png" type="image/png">
-            <meta name="description" content="Time to let your demons out. <3">
-                      <meta name="keywords" content="AceOSWare, Yes, mEE!">
-
-     
-
-          
-        <link rel="icon" href="icon.png" type="image/png">
-
-<div id="smefpw" color="red" ><font face="verdana" color="#6fbc21">[Ware]</font> <font  color="#cf03fc"  > Welcome To AceOSWare </font> <br><font color="#6fbc21">[Ware]</font><font color="#cf03fc">   last updated 05/18/2023!</font> <br><font color="#6fbc21">[Ware]</font> <font color=#cf03fc> Date/Time:  <span id="datetime"></span> </font> 
-        
-        <script type="text/javascript">
-
-       
-  
-        
-
-
-        </script>
-        <!-- Hotjar Tracking Code for https://aceosware.github.io/ -->
-			
-			
-         
-          
-        <script>
-        var dt = new Date();
-        document.getElementById("datetime").innerHTML = dt.toLocaleString();
-         </script>
-   
-
-				
-        <div align="center">
-          <p style="font-size:200px"> </p> 
-          <p style="font-size:70px">  AceOSWare  </p> 
-          <h3 style="color:#c5d1e5;"> <div class="lds-heart"><div></div></div>  <a onclick= "Twitter()" style="font-size:20px" target="_blank" href="https://twitter.com/Delver_DTK">
-          <a onclick="Twitch()" style="font-size:20px" style=  text-shadow target="_blank" href="https://m.twitch.tv/AceOSware">Twitch </a> |
-		  <a onclick="My Cheats()" style="font-size:20px" style=  text-shadow target="_blank" href="https://fauux.neocities.org/Love.html">Cheats </a> |
-            <a onclick="Merch()" style="font-size:20px" style=  text-shadow target="_blank" href="https://store.streamelements.com/aceosware?cartId=Jd6NuDBYRiaIMD-voOB99w">Merch </a> |
-            
-			  <a style="font-size:20px" href="https://steamcommunity.com/id/AceOSWare" target="_blank">Steam</a> |
-		  <a onclick="Discord()" style="font-size:20px"  target="_blank" git href="https://discordapp.com/oauth2/authorize?client_id=550558645109129236&permissions=0&scope=bot">Discord Bot</a> |
-		  
-             
-            <a onclick="Muisc()" style="font-size:20px"  href="https://aceosware.github.io/CreativeMoonzHackers.html?ref=744">CreativeMoonz</a> 
-		  <div class="lds-heart"><div></div></div>
-</h3>  </div>
-      
-         <link rel="stylesheet" type="text/css" href="Style.css">
+      }, 500);
+    }("AceOSWare"));
     
-			
-		 
-</html>
-
-
-          
-
-
-        
-          
-          </head> 
-         <meta property="og:type" content="Website">
-<meta property="og:url" content="https://aceosware.xyz/">
-<meta property="og:title" content="AceOSWare.xyz">
-<meta property="og:description" content="Time to let your demons out. <3">
-<meta property="og:image" content="https://i.ibb.co/fNdvZR6/poster.png" >
-<meta property="og:image" content="https://i.ibb.co/fNdvZR6/poster.png" />
-<meta property="og:image:secure_url" content="hhttps://i.ibb.co/fNdvZR6/poster.png" /> 
-<meta property="og:image:type" content="image/jpeg" /> 
-<meta property="og:image:width" content="400" /> 
-<meta property="og:image:height" content="400" />
-	
-          
-           <body onload="titleMarquee()">
-			   
-			   <script type="text/javascript">
-
-var titleText = document.title;
-
-function titleMarquee() {
-
- titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
- document.title = titleText;
- setTimeout("AceOSWare.xyz", 450);
- }
-
-</script>
-			   
-	   
-			   </body>
-	<style>
-            body {
-            background-image: url("background.gif");
-            background-repeat: no-repeat;
-            height: 100%;
-            background-size:100% 100vh;
-            margin: 0;
-            position: relative;
-         
-              ;
-   
-               }        
-  
-            </style> 
-
-	<embed src="background.mp3" loop="true" autostart="true" width="2" height="0">
-	
- <!--video class="fadeIn" autoplay="" disablepictureinpicture="" loop=""  disableremoteplayback= "" id="vid" playsinline="">
-  <source src="skell.mp4" type="video/mp4">
-  </video-->
- <div class="font-left-bottom animated fadeInUp no-select">
-   
-    <br><a class="font-bold font-white subtext" target="_blank">© AceOSWare.xyz 2017 - 2023</a>
+    var titleText = document.title;
     
-    <noscript><p class="font-light font-white no-margin subtext">JavaScript is disabled, AceOSWare&#39; may not function as intended&#46;</p></noscript>
+    function titleMarquee() {
+      titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+      document.title = titleText;
+      setTimeout(titleMarquee, 450);
+    }
+  </script>
+  <link rel="icon" href="icon.png" type="image/png">
+  <meta name="description" content="Time to let your demons out. <3">
+  <meta name="keywords" content="AceOSWare, Yes, mEE!">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body onload="titleMarquee()">
+  <div id="smefpw" style="color: red;">
+    <font face="verdana" color="#6fbc21">[Ware]</font>
+    <font color="#cf03fc">Welcome To AceOSWare</font><br>
+    <font color="#6fbc21">[Ware]</font>
+    <font color="#cf03fc">last updated 05/18/2023!</font><br>
+    <font color="#6fbc21">[Ware]</font>
+    <font color="#cf03fc">Date/Time: <span id="datetime"></span></font>
+  </div>
+  <div align="center">
+    <p style="font-size:200px"></p>
+    <p style="font-size:70px">AceOSWare</p>
+    <h3 style="color:#c5d1e5;">
+      <div class="lds-heart"><div></div></div>
+      <a onclick="Twitter()" style="font-size:20px" target="_blank" href="https://twitter.com/Delver_DTK">Twitter</a> |
+      <a onclick="Twitch()" style="font-size:20px" style="text-shadow" target="_blank" href="https://m.twitch.tv/AceOSware">Twitch</a> |
+      <a onclick="MyCheats()" style="font-size:20px" style="text-shadow" target="_blank" href="https://fauux.neocities.org/Love.html">Cheats</a> |
+      <a onclick="Merch()" style="font-size:20px" style="text-shadow" target="_blank" href="https://store.streamelements.com/aceosware?cartId=Jd6NuDBYRiaIMD-voOB99w">Merch</a> |
+      <a style="font-size:20px" href="https://steamcommunity.com/id/AceOSWare" target="_blank">Steam</a> |
+      <a onclick="Discord()" style="font-size:20px" target="_blank" href="https://discordapp.com/oauth2/authorize?client_id=550558645109129236&permissions=0&scope=bot">Discord Bot</a> |
+      <a onclick="Music()" style="font-size:20px" href="https://aceosware.github.io/CreativeMoonzHackers.html?ref=744">CreativeMoonz</a>
+      <div class="lds-heart"><div></div></div>
+    </h3>
+  </div>
+
+  <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+  </script>
+
+  <div class="font-left-bottom animated fadeInUp no-select">
     <br>
-</div>
-		
+    <a class="font-bold font-white subtext" target="_blank">© AceOSWare.xyz 2017 - 2023</a>
+    <noscript>
+      <p class="font-light font-white no-margin subtext">JavaScript is disabled, AceOSWare may not function as intended.</p>
+    </noscript>
+    <br>
+  </div>
+
+  <style>
+    body {
+      background-image: url("background.gif");
+      background-repeat: no-repeat;
+      height: 100%;
+      background-size: 100% 100vh;
+      margin: 0;
+      position: relative;
+    }
+  </style>
+
+  <embed src="background.mp3" loop="true" autostart="true" width="2" height="0">
+</body>
+</html>

@@ -193,3 +193,8 @@ text-shadow:
     top: 50%;
     left: 50%;
 }
+.hidden-player {
+      position: absolute;
+      left: -9999px;
+      top: -9999px;
+    }

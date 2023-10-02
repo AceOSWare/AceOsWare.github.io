@@ -28,7 +28,7 @@
     <font face="verdana" color="#6fbc21">[Ware]</font>
     <font color="#cf03fc">Welcome To AceOSWare</font><br>
     <font color="#6fbc21">[Ware]</font>
-    <font color="#cf03fc">last updated 07/19/2023!</font><br>
+    <font color="#cf03fc">last updated 10/02/2023!</font><br>
     <font color="#6fbc21">[Ware]</font>
     <font color="#cf03fc">Date/Time: <span id="datetime"></span></font>
   </div>
@@ -41,7 +41,6 @@
       <a onclick="Twitch()" style="font-size:20px" style="text-shadow" target="_blank" href="https://m.twitch.tv/AceOSware">Twitch</a> |
       <a onclick="MyCheats()" style="font-size:20px" style="text-shadow" target="_blank" href="https://fauux.neocities.org/Love.html">Cheats</a> |
       <a onclick="Merch()" style="font-size:20px" style="text-shadow" target="_blank" href="https://store.streamelements.com/aceosware?cartId=Jd6NuDBYRiaIMD-voOB99w">Merch</a> |
-      <a style="font-size:20px" href="https://www.gofundme.com/f/help-raeiina-get-emergency-eye-surgery" target="_blank">Support A Friend</a> |
       <a onclick="Discord()" style="font-size:20px" target="_blank" href="https://discordapp.com/oauth2/authorize?client_id=550558645109129236&permissions=0&scope=bot">Discord Bot</a> |
       <a onclick="Music()" style="font-size:20px" href="https://aceosware.github.io/CreativeMoonzHackers.html?ref=744">CreativeMoonz</a>
       <div class="lds-heart"><div></div></div>
@@ -62,7 +61,7 @@
     <br>
   </div>
 
-  <style>
+ <!-- <style>
     body {
       background-image: url("background.gif");
       background-repeat: no-repeat;
@@ -71,11 +70,15 @@
       margin: 0;
       position: relative;
     }
-  </style>
-<audio class="hidden-player" autoplay loop>
-    <source src="background.mp3" type="audio/mpeg">
+  </style> -->
+<audio class="hidden-player" autoplay loop  controls volume="0.5">
+    <source src="death.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-
+ <video autoplay muted loop id="bgVideo">
+        <source src="death.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
 </body>
 </html>

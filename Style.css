@@ -198,3 +198,20 @@ text-shadow:
       left: -9999px;
       top: -9999px;
     }
+body {
+    margin: 0;
+    font-family: 'Your Preferred Font', sans-serif;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+

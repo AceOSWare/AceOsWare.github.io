@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Milkie</title>
+  <meta name="description" content="A little page dedicated to the girl I love. ❤️">
+
+  <link rel="icon" href="icon.png" type="image/png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: #050407;
+      color: #fff;
+      font-family: Verdana, sans-serif;
+    }
+
+    .page {
+      width: min(100% - 32px, 950px);
+      margin: 0 auto;
+      padding: 45px 0 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #cf03fc;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      font-weight: normal;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+      text-shadow: 0 0 22px rgba(207, 3, 252, 0.25);
+    }
+
+    .subtitle {
+      color: #b9aabe;
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+
+    /* Landscape slideshow */
+
+    .slideshow {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #100b15;
+      border: 1px solid rgba(207, 3, 252, 0.35);
+      box-shadow: 0 0 35px rgba(120, 0, 160, 0.12);
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* Love letter */
+
+    .letter {
+      padding: 38px 25px;
+      margin-top: 25px;
+      background: rgba(22, 14, 28, 0.78);
+      border: 1px solid rgba(207, 3, 252, 0.17);
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    .letter h2 {
+      color: #cf03fc;
+      font-weight: normal;
+      font-size: 23px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .love-paragraph {
+      color: #e4dce9;
+      font-size: 15px;
+      line-height: 2;
+      letter-spacing: 0.2px;
+      margin-bottom: 24px;
+      opacity: 1;
+      transition: opacity 1.5s ease;
+    }
+
+    .love-paragraph:last-child {
+      margin-bottom: 0;
+    }
+
+    .love-paragraph.hidden {
+      display: none;
+      opacity: 0;
+    }
+
+    .love-paragraph.reveal {
+      display: block;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .heart {
+      color: #cf03fc;
+      text-align: center;
+      font-size: 23px;
+      margin-top: 30px;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.12); }
+    }
+
+    .scroll-hint {
+      margin-top: 28px;
+      color: #95869f;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    .music {
+      margin-top: 25px;
+    }
+
+    .music audio {
+      width: min(100%, 350px);
+      height: 40px;
+    }
+
+    footer {
+      margin-top: 45px;
+      color: #76697e;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding-top: 35px;
+      }
+
+      .slideshow {
+        aspect-ratio: 4 / 3;
+      }
+
+      .letter {
+        padding: 28px 20px;
+      }
+
+      .love-paragraph {
+        font-size: 14px;
+        line-height: 1.9;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <p class="eyebrow">A little piece of my heart</p>
+
+    <h1>Milkie</h1>
+
+    <p class="subtitle">
+      Made with love, just for you. &lt;3
+    </p>
+
+    <section class="slideshow" aria-label="Our special pictures">
+      <img
+        src="landscape1.jpg"
+        class="slide active"
+        id="firstImage"
+        alt="Our first special landscape"
+      >
+
+      <img
+        src="landscape2.jpg"
+        class="slide"
+        id="secondImage"
+        alt="Another beautiful landscape"
+      >
+    </section>
+
+    <p class="scroll-hint">SCROLL DOWN TO READ MY HEART</p>
+
+    <section class="letter">
+      <h2>To My Favorite Person ♡</h2>
+
+      <p class="love-paragraph" id="firstParagraph">
+        Milkie, I wish you could see yourself through my eyes,
+        even just for a moment. Maybe then you would understand
+        how incredibly special you are to me. You make my days
+        brighter just by being part of them, and even when we're
+        apart, you give me something beautiful to look forward to.
+        I love the little things about you, the way you make me
+        smile, the way you care about me, and the comfort I feel
+        knowing I have you in my life. You mean so much more to
+        me than words could ever properly explain, and I'm so
+        grateful that I get to love you.
+      </p>
+
+      <p class="love-paragraph hidden" id="secondParagraph">
+        And if there's one thing I want you to remember, it's
+        that you don't have to be perfect to be everything to me.
+        I want the ordinary days with you, the late-night talks,
+        the silly moments, the laughter, the quiet times, and all
+        the little memories we'll make together. I want to keep
+        learning about you, supporting you, and reminding you
+        that you're loved. No matter how far away we might be
+        from each other, you hold such a special place in my
+        heart. If I could choose someone to share all those little
+        moments with, I'd still choose you. I love you, Milkie. ♡
+      </p>
+    </section>
+
+    <div class="heart">♥</div>
+
+    <div class="music">
+      <p class="subtitle">A song for you ♡</p>
+
+      <audio id="loveSong" autoplay loop controls preload="auto">
+        <source src="love-song.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+      </audio>
+    </div>
+
+    <footer>
+      Made with love by AceOSWare · For Milkie ♡
+    </footer>
+
+  </main>
+
+  <script>
+    // Keep the browser tab title fixed.
+    document.title = "Milkie";
+
+    const firstImage = document.getElementById("firstImage");
+    const secondImage = document.getElementById("secondImage");
+    const firstParagraph = document.getElementById("firstParagraph");
+    const secondParagraph = document.getElementById("secondParagraph");
+    const loveSong = document.getElementById("loveSong");
+
+    // Attempt autoplay. Browsers may require the visitor
+    // to press Play before sound is allowed.
+    loveSong.volume = 0.5;
+    loveSong.play().catch(() => {
+      console.log("Press Play to start the music.");
+    });
+
+    // Begin with the first picture and paragraph.
+    // After 8 seconds, crossfade to the second picture
+    // and reveal the second paragraph.
+    function showSecondScene() {
+      firstImage.classList.remove("active");
+      secondImage.classList.add("active");
+
+      firstParagraph.classList.add("hidden");
+      secondParagraph.classList.remove("hidden");
+      secondParagraph.classList.add("reveal");
+    }
+
+    // Wait until the second image has loaded before starting.
+    if (secondImage.complete && secondImage.naturalWidth > 0) {
+      setTimeout(showSecondScene, 8000);
+    } else {
+      secondImage.addEventListener("load", () => {
+        setTimeout(showSecondScene, 8000);
+      }, { once: true });
+    }
+  </script>
+</body>
+</html>
